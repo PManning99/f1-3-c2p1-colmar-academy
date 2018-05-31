@@ -1,0 +1,347 @@
+html, body{
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+.flex{
+  display: flex;
+}
+
+/* LOGO BAR & NAVIGATION */
+
+nav{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.logo{
+  align-items: center;
+}
+
+.logo img{
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logo h1{
+  font-size: 32rem;
+}
+
+.full-nav a{
+  display: flex;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  padding: 0px 8px;
+}
+
+.full-nav a:hover{
+  border-top: 5px solid grey;
+  border-bottom: 5px solid white;
+}
+
+
+.full-nav{
+  padding-right: 16px;
+}
+
+
+.mini-nav{
+  display: none;
+}
+
+
+/* MAIN 1 - LEARN EVERYDAY */
+.learning, .practicing,
+.starthere, .thesis,
+.copyright {
+  display: flex;
+  height: auto;
+}
+
+.learning{
+  margin-top: 64px;
+  background-color: lightgrey;
+}
+
+
+.left-side{
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+  text-align: left;
+  align-items: center;
+}
+
+.left-side img,
+.left-side2 img {
+  height: auto;
+  width: 100%;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  justify-content: center;
+}
+
+.start-button a{
+  display: inline-flex;
+  background-color: #404040;
+  text-decoration: none;
+  color: white;
+  margin-top: 32px;
+  padding: 8px 5rem;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.start-button a:hover{
+  background-color: grey;
+}
+
+
+/* MAIN 2 - KEEP PRACTICING */
+.left-side2 {
+  width: 60%;
+  padding: 32px 24px;
+  text-align: left;
+  align-items: center;
+  border-right: 2px solid lightgrey;
+}
+
+.right-side2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.rs-top, .rs-mid, .rs-bottom{
+  display: flex;
+  padding: 16px 16px 16px 0px;
+}
+
+#orientation,
+#campus,
+#guest{
+  border-bottom: 4px solid lightgrey;
+}
+
+#orientation:hover,
+#campus:hover,
+#guest:hover,
+#fisma:hover,
+#thesis:hover {
+  background-color: lightgrey;
+}
+
+.left > .full-img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mobile-img{
+  display: none;
+}
+
+.left{
+  width: 35%;
+  padding: 0px 16px;
+}
+
+.info {
+  flex-direction: column;
+  width: 65%;
+}
+
+.motivation > p{
+  font-size: 1.2rem;
+  padding-bottom: 32px;
+  padding-right: 5%;
+}
+
+.credits {
+  font-size: 12px;
+  padding: 32px 0px;
+  font-weight: bold;
+}
+
+.info-name,
+.info > span{
+  margin-bottom: 8px;
+}
+
+.info-name,
+.thesis-title,
+.learn-title{
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 10%;
+}
+
+.info > span{
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info a{
+  text-decoration: none;
+  color: DodgerBlue;
+  font-size: 14px;
+}
+
+/* MAIN 3 - START LEARNING*/
+.starthere{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+}
+
+.starthere-mini{
+  display: none;
+}
+
+.title, .title2{
+  padding-top: 32px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+
+
+.top-row, .bottom-row{
+  height: auto;
+  margin: 0px 72px;
+}
+
+.bottom-row{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.course > img{
+  height: auto;
+  max-width: 100%;
+}
+
+.course{
+  display: block;
+  width: 33%;
+  margin: 0px 16px;
+  background-color: white;
+}
+
+/* Box text code */
+.course > p {
+  margin-top: 8px;
+}
+
+.course-name{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.courses,
+.description{
+  font-size: 1rem;
+  padding-top: 8px;
+}
+
+.group{
+  padding: 16px;
+}
+
+
+/* SECTION 4 - THESIS */
+
+.thesis{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.title2 {
+  text-align: center;
+}
+
+.content{
+  display: flex;
+  height: auto;
+}
+
+.left-side3{
+  width: 60%;
+  padding: 0px 24px 32px 24px;
+}
+
+.reimagine > span{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+video{
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
+}
+
+.right-side3{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+/* FOOTER */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  height: 80px;
+  width: 100%;
+  border-top: 1.5px solid lightgrey;
+}
+
+.copyright{
+  padding-top: 16px;
+  padding-left: 24px;
+}
+
+.policies{
+  padding-top: 16px;
+  padding-right: 24px;
+}
+
+.policies > a{
+  text-decoration: none;
+  padding-left: 16px;
+  color: black;
+}
